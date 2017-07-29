@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="title" content="Sharing Purchases" />
     <meta name="description" content="Every product in the market at your fingertip." />
-    <meta name="keywords" content="Sharing Purchase" />
+    <meta name="keywords" content="" />
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -23,7 +23,7 @@
 </head>
 <body>
 
-    <header id="header">
+    <header id="header" data-view="header">
         <nav class="navbar navbar-default navbar-static-top header">
             <div class="container-fluid">
                 <div>
@@ -59,55 +59,362 @@
     </header>
 
 
+    <main role="main">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <section id="footer">
-        <footer class="wrap">
-            <div class="container-fluid footer-content">
-                <div class="col-md-3">
-                    <ul class="social f-ul">
-                        <li class="soc"><a href=""><i class="fa fa-facebook"></i></a></li>
-                        <li class="soc"><a href=""><i class="fa fa-twitter"></i></a></li>
-                        <li class="soc"><a href=""><i class="fa fa-google-plus"></i></a></li>
-                    </ul>
+        <div class="container-fluid nopadd">
+            <div class="col-xs-12 col-sm-2 col-md-2 nopadd">
+                <div class="left-sidebar">
+                    <div class="notif-box shadow">
+                        <div class="notif-heading hor-padd20">
+                            <i class="ico-sm ico-notif"></i>
+                            <span class="text-red fs-18 fw6 hor-padd20">Nootifications</span>
+                            <i class="ico-sm ico-notif-close fl-right"></i>
+                            <div class="notif-closed"><i class="ico-sm ico-notif"></i></div>
+                        </div>
+                        <div class="not-content padd20 hor-padd20">
+                            <p class="fs-14">
+                                <b>Lorem Ipsum</b> is simply text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1500s, when an unknown printer took a galley and scrambled it to make a type specimen book.
+                            </p>
+                            <div class="border"></div>
+                            <p class="fs-14"><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            <div class="border border-2"></div>
+                        </div>
+                        <div class="not-bottom padd-bottom20 hor-padd20">
+                            <div class="notif-footer text-center">
+                                <a href="#"><input type="button" value="Options" class="btn-notif-transparent text-light fs-18 fw6" /></a>
+                                <a href="#"><input type="button" value="Next" class="btn-notif text-white fs-18 fw6" /></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <ul class="product f-ul">
-                        <li><a href="">All Products</a></li>
-                        <li><a href="">Restaurants</a></li>
-                        <li><a href="">Stores</a></li>
-                    </ul>
-                </div>
-
-                <span class="all">© All rights reserved.<img src="img/icon-sharing.svg" alt="Sharing Purchases" title="Sharing Purchases" class="m-logo"></span>
             </div>
-        </footer>
-    </section>
+
+            <div class="col-xs-12 col-sm-8 col-md-8">
+                <div class="container-fluid">
+                    <div class="block food-logo col-xs-6 col-sm-6 col-md-2">
+                        <img src="img/restaurant/mcdonalds.jpg" alt="">
+                    </div>
+
+                    <div class="block market col-xs-12 col-sm-6 col-md-3">
+                        <h4 class="fw6">Macdonald's</h4>
+                        <p class="fw6">Fast Food restaurant</p>
+                        <div class="loc">
+                            <ul>
+                                <i class="fa fa-map-marker"></i>
+                                <li class="fs-14">Terminal 1 Airport Rd - Dubai - United Arab Emirates</li>
+                            </ul>
+                            <ul>
+                                <i class="fa fa-phone"></i>
+                                <li class="fs-14">+971 4 224 5677</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="block about col-xs-12 col-sm-6 col-md-7">
+                        <div class="box">
+                            <form action="">
+                                <input type="text" placeholder="Search my store...">
+                                <select name="" id="">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </form>
+                            <p class="fs-14">About company</p>
+                            <p class="fs-14">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra sem vel tortor euismod, non molestie lacus pharetra. Proin condimentum pulvinar condimentum.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra sem vel tortor euismod, non molestie lacus pharetra. Proin condimentum pulvinar condimentum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="counters">
+                    <li>
+                        <span class="fs-16">Purchase Orders</span><span class="prod">30</span>
+                        <span class="fs-16">Products</span><span class="prod">24</span>
+                    </li>
+                </ul>
+
+                <div id="top-deals">
+
+                    <div class="col-xs-12 col-sm-6 col-md-3 padd10 hor-padd10">
+                        <div class="prod-card">
+                            <img src="img/product/rice.jpeg">
+                            <div class="hor-padd5">
+                                <p class="fs-18 text-red fw6">Rice</p>
+                                <ul class="text-left">
+                                    <li class="text-grey fs-14 ">Exp. date: <span class="text-dark fw6">17.07.2017</span></li>
+                                    <li class="text-grey fs-14"> Delivery: <span class="text-dark fw6">05.03.2017</span> </li>
+                                </ul>
+                                <div class="border"></div>
+                                <div class="price">
+                                    <ul>
+                                        <li class="fs-18 text-red fw600 inl-block">$1.99<span class="text-light">/kg</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 padd10 hor-padd10">
+                        <div class="prod-card">
+                            <img src="img/product/beef-meat.jpg">
+                            <div class="hor-padd5">
+                                <p class="fs-18 text-red fw6">Potato</p>
+                                <ul class="text-left">
+                                    <li class="text-grey fs-14 ">Exp. date: <span class="text-dark fw6">17.09.2017</span></li>
+                                    <li class="text-grey fs-14"> Delivery: <span class="text-dark fw6">18.08.2017</span> </li>
+                                </ul>
+                                <div class="border"></div>
+                                <div class="price">
+                                    <ul>
+                                        <li class="fs-18 text-red fw600 inl-block">$3.49<span class="text-light">/kg</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3 padd10 hor-padd10">
+                        <div class="prod-card">
+                            <img src="img/product/rice.jpeg">
+                            <div class="hor-padd5">
+                                <p class="fs-18 text-red fw6">Rice</p>
+                                <ul class="text-left">
+                                    <li class="text-grey fs-14 ">Exp. date: <span class="text-dark fw6">17.07.2017</span></li>
+                                    <li class="text-grey fs-14"> Delivery: <span class="text-dark fw6">05.03.2017</span> </li>
+                                </ul>
+                                <div class="border"></div>
+                                <div class="price">
+                                    <ul>
+                                        <li class="fs-18 text-red fw600 inl-block">$1.99<span class="text-light">/kg</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 padd10 hor-padd10">
+                        <div class="prod-card">
+                            <img src="img/product/beef-meat.jpg">
+                            <div class="hor-padd5">
+                                <p class="fs-18 text-red fw6">Potato</p>
+                                <ul class="text-left">
+                                    <li class="text-grey fs-14 ">Exp. date: <span class="text-dark fw6">17.09.2017</span></li>
+                                    <li class="text-grey fs-14"> Delivery: <span class="text-dark fw6">18.08.2017</span> </li>
+                                </ul>
+                                <div class="border"></div>
+                                <div class="price">
+                                    <ul>
+                                        <li class="fs-18 text-red fw600 inl-block">$3.49<span class="text-light">/kg</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3 padd10 hor-padd10">
+                        <div class="prod-card">
+                            <img src="img/product/rice.jpeg">
+                            <div class="hor-padd5">
+                                <p class="fs-18 text-red fw6">Rice</p>
+                                <ul class="text-left">
+                                    <li class="text-grey fs-14 ">Exp. date: <span class="text-dark fw6">17.07.2017</span></li>
+                                    <li class="text-grey fs-14"> Delivery: <span class="text-dark fw6">05.03.2017</span> </li>
+                                </ul>
+                                <div class="border"></div>
+                                <div class="price">
+                                    <ul>
+                                        <li class="fs-18 text-red fw600 inl-block">$1.99<span class="text-light">/kg</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 padd10 hor-padd10">
+                        <div class="prod-card">
+                            <img src="img/product/beef-meat.jpg">
+                            <div class="hor-padd5">
+                                <p class="fs-18 text-red fw6">Potato</p>
+                                <ul class="text-left">
+                                    <li class="text-grey fs-14 ">Exp. date: <span class="text-dark fw6">17.09.2017</span></li>
+                                    <li class="text-grey fs-14"> Delivery: <span class="text-dark fw6">18.08.2017</span> </li>
+                                </ul>
+                                <div class="border"></div>
+                                <div class="price">
+                                    <ul>
+                                        <li class="fs-18 text-red fw600 inl-block">$3.49<span class="text-light">/kg</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3 padd10 hor-padd10">
+                        <div class="prod-card">
+                            <img src="img/product/rice.jpeg">
+                            <div class="hor-padd5">
+                                <p class="fs-18 text-red fw6">Rice</p>
+                                <ul class="text-left">
+                                    <li class="text-grey fs-14 ">Exp. date: <span class="text-dark fw6">17.07.2017</span></li>
+                                    <li class="text-grey fs-14"> Delivery: <span class="text-dark fw6">05.03.2017</span> </li>
+                                </ul>
+                                <div class="border"></div>
+                                <div class="price">
+                                    <ul>
+                                        <li class="fs-18 text-red fw600 inl-block">$1.99<span class="text-light">/kg</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 padd10 hor-padd10">
+                        <div class="prod-card">
+                            <img src="img/product/beef-meat.jpg">
+                            <div class="hor-padd5">
+                                <p class="fs-18 text-red fw6">Potato</p>
+                                <ul class="text-left">
+                                    <li class="text-grey fs-14 ">Exp. date: <span class="text-dark fw6">17.09.2017</span></li>
+                                    <li class="text-grey fs-14"> Delivery: <span class="text-dark fw6">18.08.2017</span> </li>
+                                </ul>
+                                <div class="border"></div>
+                                <div class="price">
+                                    <ul>
+                                        <li class="fs-18 text-red fw600 inl-block">$3.49<span class="text-light">/kg</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="recent-orders">
+
+                    <div class="col-xs-12 col-sm-6 col-md-3 padd10 hor-padd10">
+                        <div class="prod-card">
+                            <img src="img/product/rice.jpeg">
+                            <div class="hor-padd5">
+                                <p class="fs-18 text-red fw6">Rice</p>
+                                <ul class="text-left">
+                                    <li class="text-grey fs-14 ">Exp. date: <span class="text-dark fw6">17.07.2017</span></li>
+                                    <li class="text-grey fs-14"> Delivery: <span class="text-dark fw6">05.03.2017</span> </li>
+                                </ul>
+                                <div class="border"></div>
+                                <div class="price">
+                                    <ul>
+                                        <li class="fs-18 text-red fw600 inl-block">$1.99<span class="text-light">/kg</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 padd10 hor-padd10">
+                        <div class="prod-card">
+                            <img src="img/product/beef-meat.jpg">
+                            <div class="hor-padd5">
+                                <p class="fs-18 text-red fw6">Potato</p>
+                                <ul class="text-left">
+                                    <li class="text-grey fs-14 ">Exp. date: <span class="text-dark fw6">17.09.2017</span></li>
+                                    <li class="text-grey fs-14"> Delivery: <span class="text-dark fw6">18.08.2017</span> </li>
+                                </ul>
+                                <div class="border"></div>
+                                <div class="price">
+                                    <ul>
+                                        <li class="fs-18 text-red fw600 inl-block">$3.49<span class="text-light">/kg</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="main-products">
+
+                    <div class="col-xs-12 col-sm-6 col-md-3 padd10 hor-padd10">
+                        <div class="prod-card">
+                            <img src="img/product/rice.jpeg">
+                            <div class="hor-padd5">
+                                <p class="fs-18 text-red fw6">Rice</p>
+                                <ul class="text-left">
+                                    <li class="text-grey fs-14 ">Exp. date: <span class="text-dark fw6">17.07.2017</span></li>
+                                    <li class="text-grey fs-14"> Delivery: <span class="text-dark fw6">05.03.2017</span> </li>
+                                </ul>
+                                <div class="border"></div>
+                                <div class="price">
+                                    <ul>
+                                        <li class="fs-18 text-red fw600 inl-block">$1.99<span class="text-light">/kg</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 padd10 hor-padd10">
+                        <div class="prod-card">
+                            <img src="img/product/beef-meat.jpg">
+                            <div class="hor-padd5">
+                                <p class="fs-18 text-red fw6">Potato</p>
+                                <ul class="text-left">
+                                    <li class="text-grey fs-14 ">Exp. date: <span class="text-dark fw6">17.09.2017</span></li>
+                                    <li class="text-grey fs-14"> Delivery: <span class="text-dark fw6">18.08.2017</span> </li>
+                                </ul>
+                                <div class="border"></div>
+                                <div class="price">
+                                    <ul>
+                                        <li class="fs-18 text-red fw600 inl-block">$3.49<span class="text-light">/kg</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-2 col-md-2">
+                <div class="right-sidebar">
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="container-fluid footer-content">
+            <div class="col-xs-6 col-md-3">
+                <ul class="padd20">
+                    <li class="fl-left"><a href="#"><i class="ico-md ico-fb"></i></a></li>
+                    <li class="fl-left"><a href="#"><i class="ico-md ico-tw"></i></a></li>
+                    <li class="fl-left"><a href="#"><i class="ico-md ico-in"></i></a></li>
+                    <li class="fl-left"><a href="#"><i class="ico-md ico-gp"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-md-6">
+                <ul>
+                    <li class="fl-left"><a href="">All Products</a></li>
+                    <li class="fl-left"><a href="#">Restaurants</a></li>
+                    <li class="fl-left"><a href="#">Stores</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <ul class="product f-ul">
+                    <li class="all">© All rights reserved.<i class="ico-footer ico-sharing hor-padd20"></i></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </footer>
 
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

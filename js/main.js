@@ -11,12 +11,12 @@ $(document).ready(function(){
 	$(document)
 	.on('click', 'a', function(e){
 		e.preventDefault();
-	}).on('click', '.tabs ul.tab li a', function(e){
+	}).on('click', '.tab-bar li', function(e){
 		data = $(this).attr('data');
-		$(this).closest('div.tabs').find('.tab').addClass('none');
-		$(this).closest('div.tabs').find('.' + data + '').removeClass('none');
-		$('.tabs a.h3').removeClass('h3_act');
-		$(this).closest('li').find('a.h3').addClass('h3_act');
+		$('body').find('.tab-content').addClass('hidden');
+		$('body').find('#' + data + '').removeClass('hidden');
+		$('.tab-bar li').removeClass('border-b text-green').addClass('text-light');
+		$(this).addClass('border-b text-green').removeClass('text-light');
 	}).on('click', '.left-content .close', function(){
 		$(this).closest('.not.prod-card').animate({
 			'left': '-110%'
